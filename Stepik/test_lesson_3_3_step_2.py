@@ -4,8 +4,8 @@ from selenium.webdriver.common.by import By
 import time
 
 
-
-def test_unSel1():
+class TestUniqCSS():
+    def test_unSel1(self):
 
             link1 = "http://suninjuly.github.io/registration1.html"
             browser = webdriver.Chrome()
@@ -39,7 +39,7 @@ def test_unSel1():
             # закрываем браузер после всех манипуляций
             browser.quit()
 
-def test_unSel2():
+    def test_unSel2(self):
             link2 = "http://suninjuly.github.io/registration2.html"
             browser = webdriver.Chrome()
             browser.get(link2)
@@ -71,5 +71,4 @@ def test_unSel2():
 
             # закрываем браузер после всех манипуляций
             browser.quit()
-
 
